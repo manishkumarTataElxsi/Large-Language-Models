@@ -1,0 +1,27 @@
+ **Temperature** is a parameter that controls the randomness of the output. 
+It determines how likely the model is to select less probable tokens when generating text. 
+The value of the temperature parameter affects the balance between creativity and predictability in the model's responses.
+
+How It Works:
+The temperature modifies the probability distribution over possible next tokens.
+Lower temperatures (closer to 0) make the distribution sharper, favoring the most likely token. This results in more deterministic and focused outputs.
+Higher temperatures (>1) make the distribution flatter, increasing the likelihood of selecting less probable tokens. This results in more diverse and creative outputs.
+Effects of Different Temperature Values:
+Low Temperature (e.g., 0.1)
+
+The output becomes highly deterministic.
+The model is less likely to explore alternative completions.
+Useful for tasks requiring precision, such as factual answers or code generation.
+High Temperature (e.g., 1.5)
+
+The output becomes more varied and unpredictable.
+The model is more likely to introduce creativity or unexpected responses.
+Suitable for tasks like creative writing or brainstorming.
+Moderate Temperature (e.g., 0.7)
+
+Balances between randomness and focus.
+Often used as a default for a mix of coherence and diversity.
+Practical Use Cases:
+Low Temperature: Generating step-by-step instructions, answering questions, writing formal documents, or generating code.
+High Temperature: Writing poetry, generating ideas, or exploring novel and creative outputs.
+Tuning: Adjusting the temperature based on the specific needs of the task to either focus the model or encourage more variety.
